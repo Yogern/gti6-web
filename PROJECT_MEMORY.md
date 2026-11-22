@@ -25,3 +25,7 @@ Not photorealistic, not massive/streamed, not full campus. No combat/police/miss
 
 ## Verification
 Run npm ci, npm run typecheck, npm run build, npm test. Browser tests use npm-packaged Chromium because browser CDN access is blocked in this environment. Keep generated artifacts untracked. See README and CHANGELOG for status.
+
+## v0.2.0 update
+Soldier model faces -Z: derive visual heading with atan2(-vx,-vz); smooth shortest-angle turns. Dedicated Walk/Run/Idle blends. NPC headings corrected too. Driver is a skeleton clone seated with world-space bone direction posing, attached to the car and visible through translucent Glass_Gray material. Reset visibility on all exit/load/travel paths. V cycles chase / driver's-window / hood cameras. Wheels rotate and kinematic collider orientation follows car.
+HUD uses an original GTA-inspired rectangular local rotating radar, neon accents, context actions and quick map/save buttons, not a claimed exact GTA 6 reproduction. Health/armor/wanted displays remain static in the non-combat prototype. Production browser tests include driver visibility and movement-facing alignment. No new model licensing rights obtained.

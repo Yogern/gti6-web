@@ -1,4 +1,9 @@
-# v0.1.0 — Vice Leonida offline preview
-First playable coastal vertical slice. Walk, sprint, jump, orbit the camera, drive a sports car, explore a fictional campus hall and save progress locally.
+# v0.2.0 — Movement, visible driver & HUD
 
-This is an independent, non-explicit evaluation prototype, not affiliated with Rockstar Games. Simplified procedural art/physics; no connected multiplayer client, combat, missions, full campus or production-fidelity graphics. Third-party sample asset rights require review before commercial redistribution. See README, ASSET_NOTICES.md and PROJECT_MEMORY.md.
+Corrected the Soldier's facing axis and walk/run animation blending. Added a seated visible protagonist, transparent cabin glass, turning vehicle collider, wheel rotation and three vehicle camera views (V).
+
+New original GTA-inspired HUD: local heading-up radar, status strips, inactive wanted stars, contextual actions, quick map/save access and neon-accented panels. Not an exact reproduction of GTA 6. Status bars are full/static in this non-combat prototype; no simulated police system is claimed.
+
+Verified with strict typecheck, production build and headless production browser smoke tests, including driver visibility and directional movement regression checks. See test output for actual results.
+
+Offline evaluation prototype; production redistribution of third-party sample assets still requires license clearance. No connected multiplayer, missions, combat, real campus replica or photorealism claims. No explicit sexual content.

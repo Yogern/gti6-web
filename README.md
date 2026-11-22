@@ -1,4 +1,4 @@
-# Vice Leonida · v0.1.0
+# Vice Leonida · v0.2.0
 Independent, non-explicit coastal browser sandbox. **Offline vertical slice, not GTA feature parity or a production release.**
 
 ## Run
@@ -22,4 +22,7 @@ Tests start Vite automatically and use npm-packaged headless Chromium with softw
 `npm run assets` refreshes sample GLBs via GitHub and validates GLB headers. Requires curl/system CA trust. No new compression is performed; Ferrari is upstream Draco-compressed, decoded locally. See ASSET_NOTICES.md. **Production distribution blocked pending license review**, especially Mixamo source redistribution. No claims that these assets are all CC0.
 
 ## Releases
-`npm run release` runs quality gates and makes ignored build/source archives in artifacts/v0.1.0. It does not publish by default. `--publish` requires `ASSETS_CLEARED=1`, clean current branch and authenticated gh; publishes a prerelease only from the current branch, never main. `--drive` requires a preconfigured rclone remote in DRIVE_REMOTE; copies to projects/game/gta6-clone/v0.1.0. No credentials should be entered into chat or committed. Arena's Drive connection does not automatically configure rclone. Semver is intentionally 0.x until the prototype meets broader acceptance criteria.
+`npm run release` runs quality gates and makes ignored build/source archives in artifacts/v0.2.0. It does not publish by default. `--publish` requires `ASSETS_CLEARED=1`, clean current branch and authenticated gh; publishes a prerelease only from the current branch, never main. `--drive` requires a preconfigured rclone remote in DRIVE_REMOTE; copies to projects/game/gta6-clone/v0.2.0. No credentials should be entered into chat or committed. Arena's Drive connection does not automatically configure rclone. Semver is intentionally 0.x until the prototype meets broader acceptance criteria.
+
+## v0.2.0 controls and presentation
+V (or the camera quick button) cycles chase, driver's-window and hood views while driving. The seated protagonist remains in the car; tinted glass permits external views. Walking/running now use distinct speed-blended clips and the correct model-facing axis. The local radar rotates with the camera and follows the player. Health/armor strips and inactive wanted stars are presentation-only until combat/police systems exist. This is an original GTA-inspired interface, not a pixel-perfect GTA 6 reproduction.

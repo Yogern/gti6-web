@@ -1,7 +1,7 @@
 {
   "name": "gti6-web",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.2.0",
+  "description": "Independent Vice Leonida coastal sandbox prototype",
   "main": "index.js",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
@@ -18,7 +18,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Yogern/gti6-web/issues"
   },

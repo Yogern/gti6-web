@@ -1,5 +1,5 @@
 import {execFileSync} from 'node:child_process';
-import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
+import {readFileSync,mkdirSync,writeFileSync,rmSync} from 'node:fs';
 const run=(cmd,args)=>execFileSync(cmd,args,{stdio:'inherit'});
 const version=JSON.parse(readFileSync('package.json','utf8')).version;
 if(!/^\d+\.\d+\.\d+$/.test(version))throw Error('Expected semantic version');
@@ -10,6 +10,8 @@ if(publish){if(process.env.ASSETS_CLEARED!=='1')throw Error('Publication blocked
 if(drive&&!process.env.DRIVE_REMOTE)throw Error('Configure DRIVE_REMOTE with an existing authenticated rclone remote; never commit credentials.');
 run('npm',['run','typecheck']);run('npm',['run','build']);run('npm',['test']);
 mkdirSync(dir,{recursive:true});
+// ZIP updates retain deleted hashed bundles: recreate only our generated archives.
+for(const name of [`dist-${tag}.zip`,`source-${tag}.zip`])rmSync(`${dir}/${name}`,{force:true});
 run('zip',['-qr',`${dir}/dist-${tag}.zip`,'dist']);
 // Working tree archive includes the milestone before commit, never secrets or browser binaries.
 run('zip',['-qr',`${dir}/source-${tag}.zip`,'src','server','scripts','tests','public','index.html','package.json','package-lock.json','tsconfig.json','vite.config.ts','playwright.config.ts','README.md','PROJECT_MEMORY.md','AGENTS.md','.cursorrules','CHANGELOG.md','RELEASE_NOTES.md','ASSET_NOTICES.md','LICENSE','.gitignore']);
