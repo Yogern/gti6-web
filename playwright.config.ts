@@ -1,0 +1,13 @@
+import {defineConfig} from '@playwright/test';
+import chromium from '@sparticuz/chromium';
+import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
+import {brotliDecompressSync} from 'node:zlib';
+import {execFileSync} from 'node:child_process';
+import {createRequire} from 'node:module';
+import {dirname,join} from 'node:path';
+const require=createRequire(import.meta.url);
+const root=dirname(dirname(require.resolve('@sparticuz/chromium')));
+mkdirSync('/tmp/vl-browser-libs',{recursive:true});
+writeFileSync('/tmp/vl-browser-libs/libs.tar',brotliDecompressSync(readFileSync(join(root,'bin/al2023.tar.br'))));
+execFileSync('tar',['xf','/tmp/vl-browser-libs/libs.tar','-C','/tmp/vl-browser-libs']);
+export default defineConfig({testDir:'tests',timeout:120000,workers:1,use:{baseURL:'http://127.0.0.1:5173',viewport:{width:960,height:640},headless:true,launchOptions:{executablePath:await chromium.executablePath(),args:chromium.args.filter(a=>a!=='--single-process'),env:{...process.env,LD_LIBRARY_PATH:`/tmp/vl-browser-libs/lib:${process.env.LD_LIBRARY_PATH||''}`}}},webServer:{command:'npm run dev',url:'http://127.0.0.1:5173',reuseExistingServer:true}});

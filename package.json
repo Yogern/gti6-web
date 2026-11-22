@@ -1,0 +1,42 @@
+{
+  "name": "gti6-web",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "server": "tsx server/index.ts",
+    "test": "playwright test",
+    "release": "node scripts/release.mjs",
+    "assets": "node scripts/fetch-assets.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yogern/gti6-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yogern/gti6-web/issues"
+  },
+  "homepage": "https://github.com/Yogern/gti6-web#readme",
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.21.0",
+    "socket.io": "^4.8.4",
+    "socket.io-client": "^4.8.4",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@sparticuz/chromium": "^153.0.0",
+    "@types/node": "^26.6.6",
+    "@types/three": "^0.187.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  },
+  "type": "module"
+}
