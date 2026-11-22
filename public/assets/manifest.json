@@ -1,0 +1,81 @@
+[
+  {
+    "file": "models/veloce.glb",
+    "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/blob/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/CarConcept/glTF-Binary/CarConcept.glb",
+    "author": "Eric Chadwick / Darmstadt Graphics Group GmbH, 2024",
+    "license": "CC-BY-4.0",
+    "modifications": "Game LOD, welded/Draco-compressed geometry and WebP textures. Character clips limited to locomotion and social poses.",
+    "sha256": "5a22294261b0eb2e985c9439e7e67213fae5e2c943c7813000010e24565b2bc0"
+  },
+  {
+    "file": "models/courier.glb",
+    "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/blob/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb",
+    "author": "Cesium, 2017",
+    "license": "CC-BY-4.0",
+    "modifications": "Game LOD, welded/Draco-compressed geometry and WebP textures. Character clips limited to locomotion and social poses.",
+    "sha256": "3c3b2b4241fc461913d487b4587de6e1e20d114babafc82f52ceffdd383b8a19"
+  },
+  {
+    "file": "models/lounge-chair.glb",
+    "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/blob/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/SheenChair/glTF-Binary/SheenChair.glb",
+    "author": "Eric Chadwick / Wayfair, LLC, 2020",
+    "license": "CC0-1.0",
+    "modifications": "Game LOD, welded/Draco-compressed geometry and WebP textures. Character clips limited to locomotion and social poses.",
+    "sha256": "ecbd7a94a8f0ce7dc71efe548579263f297b2eb9625b5eb5ed242f3abaedcfe2"
+  },
+  {
+    "file": "models/pedestrian.glb",
+    "source": "https://github.com/beep2bleep/FreeAssetsByKenneyNLandQuaternius/blob/dea756baf3b3a4889d8c245e456a4791f961578a/FreeModels by Quaternius[Patreon]/Characters and Animals/Animated Men Characters - Feb 2019/FBX/Smooth_Male_Casual.fbx",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "modifications": "Game LOD, welded/Draco-compressed geometry and WebP textures. Character clips limited to locomotion and social poses.",
+    "sha256": "e09384cd2896ce265a626d4716cd6dcfcc83e308540ec5ba6cdd9b223aae508f"
+  },
+  {
+    "file": "models/pedestrian-f.glb",
+    "source": "https://github.com/beep2bleep/FreeAssetsByKenneyNLandQuaternius/blob/dea756baf3b3a4889d8c245e456a4791f961578a/FreeModels by Quaternius[Patreon]/Characters and Animals/Animated Women Characters - Feb 2019/FBX/Smooth_Female_Casual.fbx",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "modifications": "Game LOD, welded/Draco-compressed geometry and WebP textures. Character clips limited to locomotion and social poses.",
+    "sha256": "b8c59ac575845c869ff70d6b745ca71fa607a50c2b42cec653a44e427168f26d"
+  },
+  {
+    "file": "models/terrace.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/0128ca510d653bb04d6d1e4885bd8890b5050b4f/public/glb/buildings_pack_2/Building2_Small.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "modifications": "Game LOD, welded/Draco-compressed geometry and WebP textures. Character clips limited to locomotion and social poses.",
+    "sha256": "7119d8cd8a47b592eb5a90ca5b913f71f52e914e87337a7c853a7a3d509b5d27"
+  },
+  {
+    "file": "models/computer.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/0128ca510d653bb04d6d1e4885bd8890b5050b4f/public/glb/cyberpunk_pack/Computer.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "modifications": "Game LOD, welded/Draco-compressed geometry and WebP textures. Character clips limited to locomotion and social poses.",
+    "sha256": "b8538bf9ad9f2b0ae4e8e16c325e3f860cdec34b02e46beb3dde55055235ab00"
+  },
+  {
+    "file": "models/shelf.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/0128ca510d653bb04d6d1e4885bd8890b5050b4f/public/glb/house_interior_pack/Bookshelf.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "modifications": "Game LOD, welded/Draco-compressed geometry and WebP textures. Character clips limited to locomotion and social poses.",
+    "sha256": "62d37238ec8aeef08710a18770d8edf63b10f1f96a5d8f90a2d2da982c493a06"
+  },
+  {
+    "file": "models/traffic.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/0128ca510d653bb04d6d1e4885bd8890b5050b4f/public/glb/street_pack/TrafficLight.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "modifications": "Game LOD, welded/Draco-compressed geometry and WebP textures. Character clips limited to locomotion and social poses.",
+    "sha256": "bad1919461385777a0af02ea948b70d957ac2b525141f9828400120190361ecc"
+  },
+  {
+    "file": "coast.hdr",
+    "source": "https://polyhaven.com/a/blouberg_sunrise_2",
+    "author": "Greg Zaal / Poly Haven",
+    "license": "CC0-1.0",
+    "modifications": "Local 1K HDRI from the Three.js r180 distribution."
+  }
+]

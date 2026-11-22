@@ -1,0 +1,44 @@
+{
+  "name": "vice-leonida",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && vite build",
+    "start": "tsx server/index.ts",
+    "preview": "tsx server/index.ts",
+    "assets": "node scripts/fetch-assets.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "verify": "npm test && npm run build && npm run smoke",
+    "release": "node --env-file-if-exists=.env scripts/release.mjs",
+    "test": "node --import tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "0.19.2",
+    "@fontsource/barlow": "^5.2.0",
+    "@fontsource/barlow-condensed": "^5.2.0",
+    "lucide-static": "^0.563.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "three": "0.180.0",
+    "tsx": "^4.20.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "4.2.1",
+    "@gltf-transform/extensions": "4.2.1",
+    "@gltf-transform/functions": "4.2.1",
+    "@sparticuz/chromium": "140.0.0",
+    "@types/node": "^22.0.0",
+    "@types/three": "0.180.0",
+    "draco3dgltf": "^1.5.7",
+    "meshoptimizer": "^0.22.0",
+    "playwright-core": "1.55.0",
+    "prettier": "^3.6.2",
+    "sharp": "^0.34.3",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
+  }
+}
